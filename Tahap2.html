@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitur Pesan</title>
+
+    <!-- CSS -->
+    <style>
+        #kotak-pesan {
+            height: 150px;
+            background-color: lightyellow;
+            margin: 15px;
+            border: solid 1px red;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HTML -->
+    <main>
+        <section>
+            <article id="kotak-pesan">
+                <h2>Pesan</h2>
+                <p id="pesanStatus">Sedang Memuat....</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script>
+        const pesan = document.getElementById("pesanStatus");
+
+        pesan.textContent = "Data Berhasil Disimpan";
+    </script>
+
+</body>
+</html>
